@@ -1,6 +1,12 @@
+const { task } = require("hardhat/config")
+
 require("@nomicfoundation/hardhat-toolbox")
 require("dotenv").config()
+require("./tasks/block-number")
+
 /** @type import('hardhat/config').HardhatUserConfig */
+
+task("accounts", "Prints the list of accounts", async (taskargs) => {})
 
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL
 const SEPOLIA_PRIVATE_KEY = process.env.SEPOLIA_PRIVATE_KEY
