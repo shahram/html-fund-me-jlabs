@@ -30,11 +30,13 @@ module.exports = {
     etherscan: {
         apiKey: ETHERSCAN_API_KEY,
     },
+    // values missing in some fields
     gasReporter: {
         enabled: true,
         outputFile: "gas-report.txt",
         noColors: true,
-        currency: "USD",
+        currency: "EUR",
         coinmarketCap: COINMARKETCAP_API_KEY,
+        token: "MATIC",
     },
 }
