@@ -1,10 +1,10 @@
 const { assert } = require("chai")
 const { ethers } = require("hardhat")
 
-let simpleStorageFactory
-let simpleStorage
-
 describe("SimpleStorage", function () {
+    let simpleStorageFactory
+    let simpleStorage
+
     beforeEach(async function () {
         simpleStorageFactory = await ethers.getContractFactory("SimpleStorage")
         simpleStorage = await simpleStorageFactory.deploy()
